@@ -1,6 +1,7 @@
 {
   "name": "snake-game",
+  "type": "module",
   "scripts": {
-    "start": "bun run index.ts"
+    "start": "node --experimental-strip-types index.ts"
   }
 }
