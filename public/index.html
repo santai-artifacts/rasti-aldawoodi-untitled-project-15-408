@@ -15,8 +15,8 @@
       --border: #1e1e3c;
       --text: #dde0ff;
       --text-dim: #555588;
-      --accent: #00ff88;
-      --accent-glow: rgba(0,255,136,0.35);
+      --accent: #00aaff;
+      --accent-glow: rgba(0,170,255,0.35);
       --food: #ff4757;
       --food-glow: rgba(255,71,87,0.5);
       --gold: #ffd060;
@@ -102,7 +102,7 @@
       display: block;
       border-radius: 12px;
       border: 1px solid var(--border);
-      box-shadow: 0 0 60px rgba(0,255,136,0.04);
+      box-shadow: 0 0 60px rgba(0,170,255,0.04);
     }
 
     /* ── Overlays ── */
@@ -201,7 +201,7 @@
       transition: box-shadow 0.15s;
     }
     .name-input:focus {
-      box-shadow: 0 0 0 3px rgba(0,255,136,0.25);
+      box-shadow: 0 0 0 3px rgba(0,170,255,0.25);
     }
 
     /* ── Leaderboard ── */
@@ -419,9 +419,9 @@
   const C = {
     bg:        '#07070f',
     gridLine:  '#0d0d22',
-    head:      '#00ff88',
-    bodyStart: [0, 230, 120],
-    bodyEnd:   [0, 100, 55],
+    head:      '#00aaff',
+    bodyStart: [0, 150, 255],
+    bodyEnd:   [0, 50, 150],
     food:      '#ff4757',
     foodGlow:  'rgba(255,71,87,0.6)',
     eye:       '#07070f',
@@ -512,7 +512,7 @@
       const t = len > 1 ? i / (len - 1) : 0;
       if (i === 0) {
         ctx.save();
-        ctx.shadowColor = 'rgba(0,255,136,0.45)';
+        ctx.shadowColor = 'rgba(0,170,255,0.45)';
         ctx.shadowBlur = 10;
         ctx.fillStyle = C.head;
       } else {
