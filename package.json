@@ -1,0 +1,6 @@
+{
+  "name": "snake-game",
+  "scripts": {
+    "start": "bun run index.ts"
+  }
+}
